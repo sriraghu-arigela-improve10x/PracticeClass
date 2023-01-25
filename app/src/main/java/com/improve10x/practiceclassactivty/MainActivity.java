@@ -22,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
         customToast();
         toggleButton();
         radioButton();
+        checkBoxBtn();
+    }
+
+    private void checkBoxBtn() {
+        binding.checkBoxBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, CheckBoxActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void radioButton() {

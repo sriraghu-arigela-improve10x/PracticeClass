@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/sum_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BCD4"
+        android:text="Sum"
+        android:textAllCaps="false"
+        android:textColorLink="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toast_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Toast"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/sum_btn"
+        app:layout_constraintStart_toStartOf="@+id/sum_btn"
+        app:layout_constraintTop_toBottomOf="@+id/sum_btn" />
+
+    <Button
+        android:id="@+id/custom_toast_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Custom Toast"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/toast_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toast_btn"
+        app:layout_constraintTop_toBottomOf="@+id/toast_btn" />
+
+    <Button
+        android:id="@+id/toggle_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00BCD4"
+        android:text="ToggleBtn"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/custom_toast_btn"
+        app:layout_constraintStart_toStartOf="@+id/custom_toast_btn"
+        app:layout_constraintTop_toBottomOf="@+id/custom_toast_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

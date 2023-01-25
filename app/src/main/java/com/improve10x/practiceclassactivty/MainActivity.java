@@ -24,6 +24,14 @@ public class MainActivity extends AppCompatActivity {
         radioButton();
         checkBoxBtn();
         ratingBarBtn();
+        seekBarBtn();
+    }
+
+    private void seekBarBtn() {
+        binding.seekbarBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, SeekbarActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void ratingBarBtn() {

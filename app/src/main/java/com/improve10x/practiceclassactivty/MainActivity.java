@@ -23,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
         toggleButton();
         radioButton();
         checkBoxBtn();
+        ratingBarBtn();
+    }
+
+    private void ratingBarBtn() {
+        binding.ratingbarBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, RatingBarActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void checkBoxBtn() {

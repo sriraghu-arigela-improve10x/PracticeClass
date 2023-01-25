@@ -81,4 +81,16 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/radio_btn"
         app:layout_constraintTop_toBottomOf="@+id/radio_btn" />
+
+    <Button
+        android:id="@+id/ratingbar_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00BCD4"
+        android:text="RatingBar"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_box_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

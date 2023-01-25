@@ -55,4 +55,17 @@
         app:layout_constraintEnd_toEndOf="@+id/custom_toast_btn"
         app:layout_constraintStart_toStartOf="@+id/custom_toast_btn"
         app:layout_constraintTop_toBottomOf="@+id/custom_toast_btn" />
+
+    <Button
+        android:id="@+id/radio_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00BCD4"
+        android:text="RadioBtn"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/toggle_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/toggle_btn"
+        app:layout_constraintTop_toBottomOf="@+id/toggle_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

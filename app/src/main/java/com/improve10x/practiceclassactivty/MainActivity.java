@@ -21,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
         toastBtn();
         customToast();
         toggleButton();
+        radioButton();
+    }
+
+    private void radioButton() {
+        binding.radioBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, RadioActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void toggleButton() {

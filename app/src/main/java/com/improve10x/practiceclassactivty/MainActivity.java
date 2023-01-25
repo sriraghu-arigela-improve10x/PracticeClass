@@ -25,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         checkBoxBtn();
         ratingBarBtn();
         seekBarBtn();
+        datePickerBtn();
+    }
+
+    private void datePickerBtn() {
+        binding.datepickerBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, DatePickerActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void seekBarBtn() {

@@ -16,6 +16,7 @@ public class SeekbarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySeekbarBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().setTitle("Seekbar");
         showSeekBar();
     }
 

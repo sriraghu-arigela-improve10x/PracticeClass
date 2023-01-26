@@ -26,6 +26,22 @@ public class MainActivity extends AppCompatActivity {
         ratingBarBtn();
         seekBarBtn();
         datePickerBtn();
+        timePickerBtn();
+        progressBarBtn();
+    }
+
+    private void progressBarBtn() {
+        binding.progressBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ProgressBarActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void timePickerBtn() {
+        binding.timePickerBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, TimePickerActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void datePickerBtn() {

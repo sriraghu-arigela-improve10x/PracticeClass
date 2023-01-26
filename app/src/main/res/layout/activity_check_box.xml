@@ -7,7 +7,7 @@
     tools:context=".CheckBoxActivity">
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/pizza_cb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -18,25 +18,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/coffee_cb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Coffe"
-        app:layout_constraintEnd_toEndOf="@+id/checkBox"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintEnd_toEndOf="@+id/pizza_cb"
+        app:layout_constraintStart_toStartOf="@+id/pizza_cb"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_cb" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/burger_cb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Burger"
-        app:layout_constraintEnd_toEndOf="@+id/checkBox2"
+        app:layout_constraintEnd_toEndOf="@+id/coffee_cb"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/checkBox2"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintStart_toStartOf="@+id/coffee_cb"
+        app:layout_constraintTop_toBottomOf="@+id/coffee_cb" />
 
     <Button
         android:id="@+id/order_btn"

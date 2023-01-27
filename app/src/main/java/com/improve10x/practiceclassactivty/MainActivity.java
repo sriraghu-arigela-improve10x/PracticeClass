@@ -28,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
         datePickerBtn();
         timePickerBtn();
         progressBarBtn();
+        verticalScrollView();
+    }
+
+    private void verticalScrollView() {
+        binding.verticalScrollViewBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, VerticalScrollViewActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void progressBarBtn() {

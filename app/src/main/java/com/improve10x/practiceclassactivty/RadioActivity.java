@@ -17,23 +17,35 @@ public class RadioActivity extends AppCompatActivity {
         binding = ActivityRadioBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         getSupportActionBar().setTitle("RadioButton");
-        showRadioButton();
+        handleRadioButton();
     }
 
-    private void showRadioButton() {
+    private void handleRadioButton() {
         binding.submitBtn.setOnClickListener(view -> {
-            if(binding.radioButton2.isChecked()) {
-                Toast.makeText(this, "Cricket", Toast.LENGTH_SHORT).show();
-            }
-            if(binding.radioButton3.isChecked()) {
-                Toast.makeText(this, "Volley Boll ", Toast.LENGTH_SHORT).show();
-            }
-            if(binding.radioButton4.isChecked()) {
-                Toast.makeText(this, "Kabaddi", Toast.LENGTH_SHORT).show();
-            }
-            if(binding.radioButton5.isChecked()) {
-                Toast.makeText(this, "Shuttle", Toast.LENGTH_SHORT).show();
-            }
+            boolean isCricketChecked = binding.cricketBtn.isChecked();
+            boolean isVolleyBallChecked = binding.volleyballBtn.isChecked();
+            boolean isKabaddiChecked = binding.kabaddiBtn.isChecked();
+            boolean isShuttleChecked = binding.shuttleBtn.isChecked();
+            String result = getSelectedHobbyName(isCricketChecked, isVolleyBallChecked, isKabaddiChecked, isShuttleChecked);
+            Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
         });
     }
+
+    private String getSelectedHobbyName(boolean isCricketChecked, boolean isVolleyBallChecked, boolean isKabaddiChecked, boolean isShuttleChecked) {
+        String result = "Select Hobby :";
+        if(isCricketChecked) {
+            result += "Cricket";
+        }
+        if(isVolleyBallChecked) {
+            result += "Volly Ball";
+        }
+        if(isKabaddiChecked) {
+            result += "Kabaddi";
+        }
+        if (isShuttleChecked) {
+            result += "shuttle";
+        }
+        return result;
+    }
 }
+

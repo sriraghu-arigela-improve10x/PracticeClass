@@ -23,12 +23,9 @@ public class CheckBoxActivity extends AppCompatActivity {
 
     private void handleOrder() {
         binding.orderBtn.setOnClickListener(view -> {
-            CheckBox pizzaCb = findViewById(R.id.pizza_cb);
-            CheckBox coffeeCb = findViewById(R.id.coffee_cb);
-            CheckBox burgerCb = findViewById(R.id.burger_cb);
-            boolean isPizzaChecked = pizzaCb.isChecked();
-            boolean isCoffeeChecked = coffeeCb.isChecked();
-            boolean isBurgerChecked = burgerCb.isChecked();
+            boolean isPizzaChecked = binding.pizzaCb.isChecked();
+            boolean isCoffeeChecked = binding.coffeeCb.isChecked();
+            boolean isBurgerChecked = binding.burgerCb.isChecked();
             String orderDetails = placeOrder(isPizzaChecked, isCoffeeChecked, isBurgerChecked);
             Toast.makeText(this, orderDetails, Toast.LENGTH_SHORT).show();
         });

@@ -30,25 +30,25 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/cricket_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Cricket" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/volleyball_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Volley Boll" />
+            android:text="Volley Ball" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/kabaddi_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Kabaddi" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/shuttle_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Shuttle" />

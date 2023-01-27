@@ -26,10 +26,15 @@ public class SumActivity extends AppCompatActivity {
         binding.addBtn.setOnClickListener(view -> {
             String value = binding.sum1Txt.getText().toString();
             String value1 = binding.sum2Txt.getText().toString();
-            int a = Integer.parseInt(value);
-            int b = Integer.parseInt(value1);
-            int sum = a + b;
-            Toast.makeText(this, String.valueOf(sum), Toast.LENGTH_SHORT).show();
+            String result = add(value, value1);
+            Toast.makeText(this, String.valueOf(result), Toast.LENGTH_SHORT).show();
         });
+    }
+
+    private String add(String value, String value1) {
+        int a = Integer.parseInt(value);
+        int b = Integer.parseInt(value1);
+        int sum = a + b;
+        return String.valueOf(sum);
     }
 }

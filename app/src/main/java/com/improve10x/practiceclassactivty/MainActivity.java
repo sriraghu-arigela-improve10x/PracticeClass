@@ -32,6 +32,22 @@ public class MainActivity extends AppCompatActivity {
         horizontalScrollView();
         imageSwitcher();
         alertDialog();
+        progressDialog();
+        webView();
+    }
+
+    private void webView() {
+        binding.webviewBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, WebViewActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void progressDialog() {
+        binding.progrssDialogBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ProgressDialogActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void alertDialog() {

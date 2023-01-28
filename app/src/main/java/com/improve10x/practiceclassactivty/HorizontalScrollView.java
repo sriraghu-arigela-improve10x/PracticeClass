@@ -14,5 +14,6 @@ public class HorizontalScrollView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityHorizentalScrollViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().setTitle("HorizontalScrollView");
     }
 }

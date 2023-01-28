@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#00BCD4"
     android:padding="12dp"
     tools:context=".MainActivity">
 
@@ -133,6 +134,22 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00BCD4"
                 android:text="HorizontalScrollBtn"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/image_switcher_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="Image Switcher"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/alert_dialog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="AlertDialog"
                 android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>

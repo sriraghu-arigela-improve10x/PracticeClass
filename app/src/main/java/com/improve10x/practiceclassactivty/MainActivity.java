@@ -30,6 +30,22 @@ public class MainActivity extends AppCompatActivity {
         progressBarBtn();
         verticalScrollView();
         horizontalScrollView();
+        imageSwitcher();
+        alertDialog();
+    }
+
+    private void alertDialog() {
+        binding.alertDialogBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, AlertDialogActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void imageSwitcher() {
+        binding.imageSwitcherBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ImageSwitcher.class);
+            startActivity(intent);
+        });
     }
 
     private void horizontalScrollView() {

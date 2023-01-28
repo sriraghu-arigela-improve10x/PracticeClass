@@ -15,5 +15,6 @@ public class VerticalScrollViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityVerticalScrollViewBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().setTitle("VerticalScrollView");
     }
 }

@@ -34,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
         alertDialog();
         progressDialog();
         webView();
+        spinner();
+    }
+
+    private void spinner() {
+        binding.spinnerBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, SpinnerActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void webView() {

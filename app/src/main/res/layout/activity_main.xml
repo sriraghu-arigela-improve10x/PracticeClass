@@ -168,6 +168,14 @@
                 android:backgroundTint="#00BCD4"
                 android:text="WebView"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/spinner_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="Spinner"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 

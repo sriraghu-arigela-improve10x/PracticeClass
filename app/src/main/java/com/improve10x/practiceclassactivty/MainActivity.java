@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ToggleButton;
 
 import com.improve10x.practiceclassactivty.databinding.ActivityMainBinding;
 
@@ -35,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
         progressDialog();
         webView();
         spinner();
+        customAlertDialog();
+    }
+
+    private void customAlertDialog() {
+        binding.customAlertDialogBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, CustomAlertDialogActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void spinner() {

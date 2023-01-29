@@ -176,6 +176,14 @@
                 android:backgroundTint="#00BCD4"
                 android:text="Spinner"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/custom_alert_dialog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="CustomAlert"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 

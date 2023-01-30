@@ -184,6 +184,15 @@
                 android:backgroundTint="#00BCD4"
                 android:text="CustomAlert"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/search_view_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="SearchView"
+                android:textAllCaps="false" />
+
         </LinearLayout>
     </ScrollView>
 

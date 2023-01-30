@@ -28,7 +28,7 @@ public class CustomAlertDialogActivity extends AppCompatActivity {
             dialog = new Dialog(this);
             customItemBinding = CustomItemBinding.inflate(getLayoutInflater());
             dialog.setContentView(customItemBinding.getRoot());
-            customItemBinding.dismisBtn.setOnClickListener(view1 -> {
+            customItemBinding.dismissBtn.setOnClickListener(view1 -> {
                 finish();
             });
             customItemBinding.closeBtn.setOnClickListener(view1 -> {

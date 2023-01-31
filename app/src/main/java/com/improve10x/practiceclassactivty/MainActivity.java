@@ -36,7 +36,24 @@ public class MainActivity extends AppCompatActivity {
         spinner();
         customAlertDialog();
         searchViewBtn();
+        textWatcherBtn();
+        searchViewToolBarBtn();
     }
+
+    private void searchViewToolBarBtn() {
+        binding.searchToolbar.setOnClickListener(view -> {
+            Intent intent = new Intent(this, SearchViewToolBarActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void textWatcherBtn() {
+        binding.textWatcherBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, TextWatcherActivity.class);
+            startActivity(intent);
+        });
+    }
+
     private void searchViewBtn() {
         binding.searchViewBtn.setOnClickListener(view -> {
             Intent intent = new Intent(this, SearchViewActivity.class);

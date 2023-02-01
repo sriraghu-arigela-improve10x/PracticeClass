@@ -38,6 +38,38 @@ public class MainActivity extends AppCompatActivity {
         searchViewBtn();
         textWatcherBtn();
         searchViewToolBarBtn();
+        AutoCompleteTextViewBtn();
+        MultiAutoCompleteTextView();
+        CustomCheckBox();
+        CustomRadioButton();
+    }
+
+    private void CustomRadioButton() {
+        binding.customRadioBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, CustomRadioButtonActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void CustomCheckBox() {
+        binding.multiAutoCompleateTextView.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MultiAutoCompleteTextViewActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void MultiAutoCompleteTextView() {
+        binding.multiAutoCompleateTextView.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MultiAutoCompleteTextViewActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void AutoCompleteTextViewBtn() {
+        binding.autoCompleteTextView.setOnClickListener(view -> {
+            Intent intent = new Intent(this, AutoCompleteTextViewActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void searchViewToolBarBtn() {

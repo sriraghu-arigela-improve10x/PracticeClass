@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/webView"
+    android:id="@+id/auto_complete_text_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#00BCD4"
@@ -207,6 +207,38 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00BCD4"
                 android:text="SearcToolBar"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="AutoCompleteTextView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/multi_auto_compleate_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="MultiAutoCompleateTextView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/custom_check_box_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="Custom CheckBox"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/custom_radio_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00BCD4"
+                android:text="CustomRadioButton"
                 android:textAllCaps="false" />
 
         </LinearLayout>
